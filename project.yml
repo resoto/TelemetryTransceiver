@@ -1,0 +1,23 @@
+name: TelemetryTransceiver
+options:
+  bundleIdPrefix: com.telemetry
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  TelemetryTransceiver:
+    type: application
+    platform: iOS
+    sources:
+      - TelemetryTransceiver
+    info:
+      path: TelemetryTransceiver/Info.plist
+      properties:
+        CFBundleDisplayName: トランシーバー
+        UILaunchScreen: {}
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.telemetry.transceiver
+      CODE_SIGN_STYLE: Automatic
+      INFOPLIST_FILE: TelemetryTransceiver/Info.plist
+      SWIFT_VERSION: "5.0"
+      TARGETED_DEVICE_FAMILY: "1,2"
+      ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
